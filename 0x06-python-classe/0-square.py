@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-"""
-represente the squere
-"""
+"""defintions of the class Square."""
 
 
 class Square:
-    """
-    intruduce a square
-    """
+    """intruduce a square."""
     pass
+
