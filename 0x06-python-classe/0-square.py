@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""defintions of the class Square."""
+""" define square with empty class"""
 
 
 class Square:
-    """intruduce a square."""
+    """intruduce a square"""
     pass
-
