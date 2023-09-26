@@ -1,27 +1,18 @@
 #!/usr/bin/python3
-"""
-empty
-"""
+"""intruduce a class Square."""
 
 
 class Square:
-    """
-    intruduce a square by private attribute size,
-    and instantiation with optional size:
+    """define a square."""
+
     def __init__(self, size=0):
-    """
-    def __init__(self, size=0):
+        """Initialize a new Square.
+
+        Args:
+            size (int): The size of new square.
         """
-        private instance attribute
-        parameters
-        ------------------
-        size : integer else TypeError
-        if size less than zero , raise value error
-        """
-        self.__size = size
-        try:
-            assert type(size) == int
-        except:
+        if not isinstance(size, int):
             raise TypeError("size should be an integer")
-        if size < 0:
+        elif size < 0:
             raise ValueError("size should be >= 0")
+        self.__size = size
