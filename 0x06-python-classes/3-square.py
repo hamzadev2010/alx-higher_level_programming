@@ -27,6 +27,6 @@ class Square:
     def area(self):
         """
         public instance method
-        return square 
+        return square
         """
         return self.__size ** 2
