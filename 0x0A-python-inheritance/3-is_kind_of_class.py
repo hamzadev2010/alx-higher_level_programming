@@ -1,14 +1,10 @@
 #!/usr/bin/python3
-# Auth: Sangwani P Zyambo
-
-"""  definition a function that returns True if object intance otherwise false
-
-"""
+""" object is instance of class or subclass"""
 
 
 def is_kind_of_class(obj, a_class):
-    """ Returns true if the object is an instace of a class"""
-
-    if isinstance(obj, a_class):
+    """return true is isinstance is true else false"""
+    x = isinstance(obj, a_class)
+    if x:
         return True
     return False
