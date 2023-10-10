@@ -10,6 +10,6 @@ class MyInt(int):
         return self.real != value
 
     def __ne__(self, value):
-        """Reimplement the != operator to behave 
+        """Reimplement the != operator to behave
         like the == operator."""
         return self.real == value
