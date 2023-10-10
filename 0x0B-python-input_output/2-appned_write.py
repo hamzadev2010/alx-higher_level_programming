@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""2-append_write.py
+"""Function that generates a JSON
+representation of an object and returns it as a string.
 """
 
 def append_write(filename="", text=""):
@@ -12,3 +13,4 @@ Returns: The number of characters written.
     """
     with open(filename, mode="a", encoding="UTF-8") as f:
         return (f.write(text))
+
