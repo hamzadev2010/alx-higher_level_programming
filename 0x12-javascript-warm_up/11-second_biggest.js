@@ -1,9 +1,9 @@
 #!/usr/bin/node
 // Display and sorted the biggest number
-const num = process.argv;
-if (num.length < 4) {
-  console.log(0);
+if (process.argv.length < 4) {
+  console.log('0');
 } else {
-const sortedArgs = num.slice(2).map(Number).sort((x, y) => y - x);
-  console.log(sortedArgs.length < 4 ? sortedArgs[2] : 0);
-	}
+  const num = process.argv.slice(2).map(Number);
+  const numsort = num.sort((a, b) => b - a);
+  console.log(num.length >= 3 ? num[2] : '0');
+}
