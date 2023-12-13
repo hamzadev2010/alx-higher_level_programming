@@ -3,7 +3,7 @@
 // and computes a dictionary of user ids by occurrence.
 const dict = require('./101-data').dict;
 const nDict = {};
-Object.keys(dict).map(function (i, index) {
+for (const i in dict) { {
 	if (nDict[dict[`${i}`]] === undefined) {
     nDict[dict[`${i}`]] = [];
   }
