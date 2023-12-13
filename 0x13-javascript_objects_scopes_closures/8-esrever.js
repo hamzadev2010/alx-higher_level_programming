@@ -2,8 +2,8 @@
 // returns the reversed version of a list.
 exports.esrever = function (list) {
   const lis = [];
-  for (const it of list) {
-    lis.push(list[it]);
+  for (let i = list.length - 1; i >= 0; i--) {
+    lis.push(list[i]);
   }
   return lis;
 };
