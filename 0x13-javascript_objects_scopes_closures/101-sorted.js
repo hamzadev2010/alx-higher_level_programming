@@ -2,11 +2,14 @@
 // dictionary of occurrences by user id
 // and computes a dictionary of user ids by occurrence.
 const dict = require('./101-data').dict;
-const nDict = {};
-for (const i in dict) { {
-	if (nDict[dict[`${i}`]] === undefined) {
-    nDict[dict[`${i}`]] = [];
-  }
-  nDict[dict[`${i}`]].push(i);
-}
+const sortAndOrganize = (obj) => {
+  const rs = {};
+  Object.entries(obj).forEach(([k, v]) => {
+    rs[v] = result[v] || [];
+    rs[v].push(k);
+  });
+
+	return rs;
+};
+const nDict = sortAndOrganize(dict);
 console.log(nDict);
