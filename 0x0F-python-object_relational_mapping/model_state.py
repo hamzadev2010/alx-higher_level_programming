@@ -4,8 +4,8 @@
 from sqlalchemy import Column, Integer, String, MetaData
 from sqlalchemy.ext.declarative import declarative_base
 
-Base = declarative_base()
 mt = MetaData()
+Base = declarative_base(mt=mt)
 
 class State(Base):
     """Introduce state"""
