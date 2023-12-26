@@ -11,10 +11,7 @@ if __name__ == '__main__':
                     WHERE name LIKE BINARY 'N%'\
                     ORDER BY id ASC")
 
-    query_rows = cr.fetchall()
+    states = cur.fetchall()
 
-    for row in data:
-        print(row)
-
-    cr.close()
-    cn.close()
+    for state in states:
+        print(states)
