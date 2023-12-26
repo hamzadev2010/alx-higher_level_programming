@@ -4,13 +4,13 @@
 import sys
 import MySQLdb
 
-if __name__ == "__main__":
-     cn = MySQLdb.connect(host="localhost", port=3306, user=sys.rgv[1],
-                           passwd=sys.argv[2], cn=sys.argv[3], charset="utf8")
-    cr = cn.cursor()
-    cr.execute("SELECT * FROM states ORDER BY states.id ASC")
-    query_rows = cr.fetchall()
-    for row in query_rows:
-        print(row)
-    cr.close()
-    cn.close()
+if __name__ == '__main__':
+    db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2],
+                         db=sys.argv[3], port=3306)
+
+    cr = db.cursor()
+    cr.execute("SELECT * FROM states;")
+    states = cr.fetchall()
+
+    for state in states:
+        print(state)
