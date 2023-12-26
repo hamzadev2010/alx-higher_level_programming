@@ -14,3 +14,5 @@ if __name__ == '__main__':
 
     for states in states:
         print(states)
+        cr.close()
+        db.close()
