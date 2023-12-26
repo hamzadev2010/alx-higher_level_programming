@@ -12,5 +12,5 @@ if __name__ == '__main__':
     cr.execute("SELECT * FROM states;")
     states = cr.fetchall()
 
-    for state in states:
+    for states in states:
         print(states)
