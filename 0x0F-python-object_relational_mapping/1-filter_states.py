@@ -9,9 +9,9 @@ if __name__ == '__main__':
                          db=argv[3], port=3306)
 
     cr = db.cursor()
-    cr.execute((" SELECT * FROM states
-          WHERE name LIKE BINARY '{}'
-          ORDER BY id ASC" )
+    cr.execute(("SELECT * FROM states\
+                    WHERE name LIKE BINARY 'N%'\
+                    ORDER BY id ASC" )
     st = cr.fetchall()
 
     for states in st:
