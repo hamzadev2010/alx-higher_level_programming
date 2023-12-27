@@ -13,5 +13,3 @@ if __name__ == "__main__":
     for row in query_rows:
         if row[1].startswith("N"):
             print(row)
-    cr.close()
-    db.close()
