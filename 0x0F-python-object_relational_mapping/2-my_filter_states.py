@@ -9,7 +9,7 @@ if __name__ == '__main__':
                          db=argv[3], port=3306)
 
     cr = db.cursor()
-    cr.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY states.id ASC;").format(sys.argv[4]))
+    cr.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY states.id ASC;".format(sys.argv[4]))
     st = cr.fetchall()
 
     for states in st:
