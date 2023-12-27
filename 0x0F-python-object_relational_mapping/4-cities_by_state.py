@@ -9,10 +9,8 @@ if __name__ == '__main__':
                          db=argv[3], port=3306)
 
     cr = db.cursor()
-    cr.execute("SELECT cities.id, citirs.name, states.name
-          FROM states , cities 
-          WHERE cities.state_id = states.id
-          ORDER BY cities.id ASC")
+    cr.execute("SELECT cities.id, cities.name, states.name \
+    FROM cities JOIN states ON cities.state_id = states.id;")
     st = cr.fetchall()
 
     for states in st:
