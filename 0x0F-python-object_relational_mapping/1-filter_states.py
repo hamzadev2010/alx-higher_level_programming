@@ -9,7 +9,7 @@ if __name__ == '__main__':
                          db=argv[3], port=3306)
 
     cr = db.cursor()
-    cr.execute(("SELECT * FROM states ORDER BY states.id ASC;")
+    cr.execute(("SELECT * FROM states ORDER BY states.id ASC")
     st = cr.fetchall()
 
     for states in st:
