@@ -11,7 +11,7 @@ if __name__ == '__main__':
     cr = db.cursor()
     cr.execute("SELECT cities.id, cities.name, states.name \
     FROM cities JOIN states ON cities.state_id = states.id \
-    WHERE states.name = '{}';".format(argv[4])))
+    WHERE states.name = '{}';".format(argv[4]))
     st = cr.fetchall()
 
      print(", ".join([states[0] for states in st]))
