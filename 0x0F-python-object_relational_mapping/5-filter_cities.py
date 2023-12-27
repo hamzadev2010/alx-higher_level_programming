@@ -14,5 +14,4 @@ if __name__ == '__main__':
     WHERE states.name = '{}';".format(argv[4])))
     st = cr.fetchall()
 
-    for states in st:
-        print(states)
+     print(", ".join([states[0] for states in st]))
