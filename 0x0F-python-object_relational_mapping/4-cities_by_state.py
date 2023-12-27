@@ -14,4 +14,4 @@ if __name__ == '__main__':
     st = cr.fetchall()
 
     for states in st:
-        print(states) 
+        print(states)
