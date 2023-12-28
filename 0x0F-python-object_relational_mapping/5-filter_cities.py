@@ -9,9 +9,11 @@ if __name__ == '__main__':
                          db=argv[3], port=3306)
 
     cr = db.cursor()
-    cr.execute("SELECT cities.id, cities.name, states.name \
-    FROM cities JOIN states ON cities.state_id = states.id \
-    WHERE states.name = '{}';", (argv[4]))
+    cr.execute("""SELECT cities.name FROM cities
+        JOIN states ON cities.state_id = states.id
+        WHERE states.name = %s
+        ORDER BY cities.id ASC
+        """, (argv[4], ))
     st = cr.fetchall()
     if st is not None:
-        print(", ".join([states[0] for states in st]))
+        print(", ".join([states[1] for states in st]))
