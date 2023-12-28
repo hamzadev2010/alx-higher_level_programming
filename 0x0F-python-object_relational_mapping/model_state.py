@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Model State"""
 
 from sqlalchemy import Column
