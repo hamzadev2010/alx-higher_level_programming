@@ -15,4 +15,5 @@ if __name__ == '__main__':
         ORDER BY cities.id ASC
         """, (argv[4], ))
     st = cr.fetchall()
+    if st is not None:
         print(", ".join([states[0] for states in st]))
