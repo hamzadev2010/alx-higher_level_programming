@@ -2,7 +2,7 @@
 """
 a script that adds the State object “Louisiana”
 """
-from sys import agv
+from sys import argv
 from model_state import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
