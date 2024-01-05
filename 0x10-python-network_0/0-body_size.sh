@@ -1,4 +1,3 @@
 #!/bin/bash
-#script that takes in a URL, sends a request to that URL,
-#sand displays the size of the body of the response
+#script that takes in a URL, sends a request to that URL
 curl -s "$1" | wc -c
