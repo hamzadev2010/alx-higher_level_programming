@@ -4,11 +4,11 @@
 """
 import requests
 from sys import argv
-from requests.auth import HTTPBasicAuth
+import requests.auth
 
 
 if __name__ == "__main__":
 
       webreq = requests.get("https://api.github.com/user", auth=auth)
-       auth = HTTPBasicAuth(argv[1], argv[2])
+       auth = requests.auth.HTTPBasicAuth(argv[1], argv[2])
        print(webreq.json().get("id"))
