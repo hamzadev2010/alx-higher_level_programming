@@ -3,6 +3,7 @@
 """
 from urllib import request
 
+
 if __name__ == "__main__":
     web = urllib.request.Request("https://alx-intranet.hbtn.io/status")
     with urllib.request.urlopen(web) as response:
