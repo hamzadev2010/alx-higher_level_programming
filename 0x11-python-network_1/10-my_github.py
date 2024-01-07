@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Script that check the api with username and password
+"""Script that check the web (api) with username and password
+and give response
 """
 from sys import argv
 import requests

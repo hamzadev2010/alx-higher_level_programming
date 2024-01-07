@@ -19,8 +19,8 @@ if __name__ == "__main__":
         if not json_output:
             print("No result")
         else:
-            idd = json_outp.get("id")
-            name = json_outp.get("name")
+            idd = json_output.get("id")
+            name = json_output.get("name")
             print("[{}] {}".format(idd, name))
     except ValueError as invalid_json:
         print("Not a valid JSON")
