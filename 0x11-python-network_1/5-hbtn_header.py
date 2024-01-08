@@ -6,8 +6,8 @@ and displays the value of the variable
 import requests
 from sys import argv
 
-if __name__ == '__main__':
 
+if __name__ == '__main__':
     webrq = requests.get(argv[1])
     hd= webrq.headers.get('X-Request-Id')
     print(hd)
