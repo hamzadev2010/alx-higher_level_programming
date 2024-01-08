@@ -8,6 +8,7 @@ from sys import argv
 
 
 if __name__ == '__main__':
-    webrq = requests.get(argv[1])
+    web = argv[1]
+    webrq = requests.get(web)
     hd= webrq.headers.get('X-Request-Id')
     print(hd)
