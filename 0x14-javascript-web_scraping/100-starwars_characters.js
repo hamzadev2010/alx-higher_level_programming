@@ -1,7 +1,7 @@
 #!/usr/bin/node
 //a script that displays all characters of a Star Wars movie:
 const rq = require('request');
-const weburl = 'https://swapi-api.hbtn.io/api/films/'.concat(process.argv[2]);
+const weburl = 'https://swapi-api.alx-tools.com/api/films/'.concat(process.argv[2]);
 
 rq(weburl, function (err, response, body) {
   const characters = JSON.parse(body).characters;
