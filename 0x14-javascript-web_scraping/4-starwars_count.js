@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// script that displays the number of movies 
+// script that displays the number of movies
 const rq = require('request');
 const weburl = process.argv[2];
 
