@@ -16,5 +16,4 @@ rq(weburl, function (err, response, body) {
       }
     }
   }
-  console.log(cnt);
-});
+  console.log(cnt);});
